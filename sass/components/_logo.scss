@@ -1,0 +1,14 @@
+.logo { 
+    color: var(--main-btn-color); 
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.1923;
+    margin-right: 93px;
+}
+
+.logo2 { color: var(--seconder-btn-color)}
+
+.footer-container {
+    display: flex;    align-items: baseline;
+}
