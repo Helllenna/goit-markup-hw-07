@@ -2,16 +2,16 @@
   padding-top:0;
 }
     
-.business-items {
+.business__item {
   display: flex;
   gap:var(--main-gap);
 }
     
-.thumb-business {
+.business_thumb {
   position: relative;
 }
     
-.thumb-business-text {
+.business__text {
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
