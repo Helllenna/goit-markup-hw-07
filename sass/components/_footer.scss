@@ -5,12 +5,11 @@
   line-height: 1.7143;
   margin-top: 20px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-    
-.address:hover,
-.address:focus,
-.address.current {
-  color: var(--main-btn-color);
+    &:hover,
+    &:focus,
+    &.current {
+      color: var(--main-btn-color);
+    }
 }
     
 .footer {
@@ -18,12 +17,11 @@
   padding-top: 60px;
   padding-bottom: 60px;
 }
-    
-.logomargin {
-  margin-right: 0;
+
+.footer-soc {
+  margin-left: 70px;
 }
-    
-    
+
 .footer-h3 {
   font-weight: 700;
   font-size: 14px;
@@ -33,7 +31,7 @@
   color: var(--seconder-text-color);
   margin-bottom: 20px;
 }
-.footer-container {
-  display: flex;    align-items: baseline;
+.footer__container {
+  display: flex;    
+  align-items: baseline;
 }
- 
