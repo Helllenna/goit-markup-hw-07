@@ -1,9 +1,11 @@
 .signup-form {
-  margin-left: auto;
   display: flex;
   gap: 12px;
 }
   
+.signup-form_margin {
+  margin-left: auto;
+}
 .form__title {
   font-size: 14px;
   line-height: 16px;

@@ -4,10 +4,9 @@
   gap: var(--main-gap);
 }
   
-.pf-list   {
+.pf-list {
   flex-basis: calc((100% - 60px)/3);
 }
-  
   
 .portfolio-list__item {
   background-color: var(--main-bg-color);

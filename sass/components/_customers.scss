@@ -21,17 +21,16 @@
     }
   }
   
-  
 .regular-customers__logo {
   fill: var(--soc-color);
   display: block;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  .regular-customers__link:hover & {
-    fill: var(--main-btn-color);
-  }
-    
-  .regular-customers__link:focus & {
-    fill: var(--main-btn-color);
-  }
+    .regular-customers__link:hover & {
+      fill: var(--main-btn-color);
+    }
+      
+    .regular-customers__link:focus & {
+      fill: var(--main-btn-color);
+    }
   }
   

@@ -4,15 +4,16 @@
     font-weight: 700;
     font-size: 26px;
     line-height: 1.1923;
+}
+
+.header__logo-margin {
     margin-right: 93px;
 }
 
-.logo2 { color: var(--seconder-btn-color)}
+.logo2 { 
+    color: var(--seconder-btn-color)}
 
 .logo3 {
     color: var(--fourth-btn-color);
 }
 
-.logo__margin {
-    margin-right: 0;
-}

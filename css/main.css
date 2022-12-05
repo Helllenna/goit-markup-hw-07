@@ -98,7 +98,6 @@ body {
   color: var(--main-btn-color);
   position: relative;
 }
-
 .current::after {
   content: "";
   position: absolute;
@@ -110,7 +109,7 @@ body {
   background-color: var(--main-btn-color);
 }
 
-.hero__btn {
+.btn {
   color: var(--seconder-text-color);
   background-color: var(--main-btn-color);
   font-family: inherit;
@@ -121,38 +120,29 @@ body {
   border: none;
   border-radius: 4px;
   letter-spacing: 0.06em;
-  margin: 0 auto;
   display: flex;
   align-items: center;
   text-align: center;
-  padding: 10px 32px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.hero__btn:hover, .hero__btn:focus, .hero__btn.current {
+.btn:hover, .btn:focus, .btn.current {
   background-color: #188CE8;
+}
+
+.hero__btn {
+  margin: 0 auto;
+  padding: 10px 32px;
 }
 
 .form__btn {
   gap: 10px;
-  color: var(--seconder-text-color);
-  background-color: var(--main-btn-color);
-  font-family: inherit;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.875;
-  cursor: pointer;
-  border: none;
-  border-radius: 4px;
-  letter-spacing: 0.06em;
   margin: 0 auto;
-  display: flex;
-  align-items: center;
-  text-align: center;
   padding: 10px 28px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.form__btn:hover, .form__btn:focus, .form__btn.current {
-  background-color: #188CE8;
+
+.modal__btn {
+  margin: 0 auto;
+  padding: 10px 52px;
 }
 
 .portfolio-nav {
@@ -185,20 +175,15 @@ body {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.modal-form-btn {
-  padding: 10px 52px;
-}
-
-.modal__btn {
-  padding: 10px 52px;
-}
-
 .logo {
   color: var(--main-btn-color);
   font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
   line-height: 1.1923;
+}
+
+.header__logo-margin {
   margin-right: 93px;
 }
 
@@ -208,10 +193,6 @@ body {
 
 .logo3 {
   color: var(--fourth-btn-color);
-}
-
-.logo__margin {
-  margin-right: 0;
 }
 
 .contact {
@@ -274,10 +255,6 @@ body {
 }
 .main-nav__link:hover, .main-nav__linkk:focus, .main-nav__link.current {
   color: var(--main-btn-color);
-}
-
-.header__container3_item {
-  display: flex;
 }
 
 .header__icon {
@@ -353,7 +330,7 @@ body {
   gap: var(--main-gap);
 }
 
-.business_thumb {
+.business__thumb {
   position: relative;
 }
 
@@ -379,7 +356,7 @@ body {
   background-color: var(--fourth-bg-color);
 }
 
-.team__items {
+.team__list {
   display: flex;
   gap: var(--main-gap);
 }
@@ -392,7 +369,7 @@ body {
   text-align: center;
 }
 
-.team__list {
+.team__items {
   background-color: var(--main-bg-color);
   flex-basis: calc((100% - 90px) / 4);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -413,9 +390,8 @@ body {
   margin-bottom: 16px;
 }
 
-.team-soc-items {
+.soc__list {
   display: flex;
-  justify-content: center;
   gap: 10px;
 }
 
@@ -445,11 +421,6 @@ body {
 
 .soc-team__item {
   margin: 0 auto;
-}
-
-.soc-footer__list {
-  display: flex;
-  gap: 10px;
 }
 
 .soc-footer__item {
@@ -495,13 +466,20 @@ body {
   fill: var(--main-btn-color);
 }
 
-.address {
+.footer__address {
   color: var(--seconder-text-color);
   font-style: normal;
   font-size: 14px;
   line-height: 1.7143;
-  margin-top: 20px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer__address:hover, .footer__address:focus, .footer__address.current {
+  color: var(--main-btn-color);
+}
+
+.address {
+  margin-top: 20px;
+  color: var(--seconder-text-color);
 }
 .address:hover, .address:focus, .address.current {
   color: var(--main-btn-color);
@@ -513,11 +491,11 @@ body {
   padding-bottom: 60px;
 }
 
-.footer-soc {
+.footer-soc__margin {
   margin-left: 70px;
 }
 
-.footer-h3 {
+.footer__h3 {
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
@@ -533,9 +511,12 @@ body {
 }
 
 .signup-form {
-  margin-left: auto;
   display: flex;
   gap: 12px;
+}
+
+.signup-form_margin {
+  margin-left: auto;
 }
 
 .form__title {
@@ -592,7 +573,6 @@ body {
   transform: translate(-50%, -50%) scaleX(1);
   transition: transform 500ms linear;
 }
-
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scaleX(3);
 }
@@ -806,4 +786,4 @@ body {
 }
 .portfolio-list__item:focus .portfolio-thumb__text {
   transform: translateY(0);
-}/*# sourceMappingURL=sass.css.map */
+}/*# sourceMappingURL=main.css.map */

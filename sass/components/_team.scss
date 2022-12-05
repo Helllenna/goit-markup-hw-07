@@ -2,7 +2,7 @@
     background-color: var(--fourth-bg-color);
 }
   
-.team__items {
+.team__list {
   display: flex;
   gap: var(--main-gap);
 }
@@ -15,7 +15,7 @@
   text-align: center;
 }
   
-.team__list {
+.team__items {
   background-color: var(--main-bg-color);
   flex-basis: calc((100% - 90px) / 4);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
