@@ -14,7 +14,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: $transition_border-colo;
+  transition: $transition_border-color;
     &:hover,
     &:focus  {
       border-color: var(--main-btn-color);
