@@ -5,7 +5,7 @@
 }
   
 .pf-list {
-  flex-basis: calc((100% - 60px)/3);
+  @include basis(2, 3);
 }
   
 .portfolio-list__item {
